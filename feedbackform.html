@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+ <html>
+
+ <head>
+ 	 <title>Feedback form</title>
+</head>
+
+<body>
+	<h1>Sample Registration Form </h1>
+	<form method = "post" action = "first.html" autocomplete="on">
+	
+	<fieldset>
+	<legend> Grouping of names</legend>
+	<p>First Name:<input name = "name" type = "text" size = "25" maxlength = "30" placeholder="mohana" >
+	</p>
+
+	<p>Last Name:<input name = "name" type = "text" value = "Saranya" required>
+	</p>
+	
+	<p>Password:<input name = "pwd" type = "password" size = "25" maxlength = "30" autofocus>
+	</p>
+	</fieldset>
+	
+	<p>Comments:<br>
+	<textarea name = "comments" rows = "10" cols = "14">Enter comments here.</textarea>
+	</p>
+
+	<p>E-mail Address:<input name = "email" type = "email" size = "25" placeholder="mohanasaranyaa@gmail.com">
+	</p>	
+
+	<p>
+		<strong>Things you liked:</strong><br>
+		Site design<input name = "thingsliked" type = "checkbox" value = "Design">
+		Links<input name = "thingsliked" type = "checkbox" value = "Links">
+		Ease of use<input name = "thingsliked" type = "checkbox" value = "Ease" checked>
+		Images<input name = "thingsliked" type = "checkbox" value = "Images">
+	</p>
+
+	<p>
+ 	<strong>How did you get to our site?:</strong><br>
+ 		Search engine
+ 		<input name = "howtosite" type = "radio" value = "search engine" checked>
+		Links from another site 
+		<input name = "howtosite" type = "radio"  value = "link">
+		Other
+		<input name = "howtosite" type = "radio"  value = "other">
+	</p>
+
+	<p>
+		Rate our site:
+		<select name = "rating">
+		<option selected>Amazing</option>
+		<option >4</option>
+		<option >3</option>
+		<option>2</option>
+		<option>1</option>
+		</select>
+	</p>
+
+	
+	<p>
+	<h3>Choose your browser from the list:</h3>
+	
+	<datalist id="browsers" >
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+	</datalist>
+	</p>
+	
+	<p>
+		Quantity:<input type="number" name="quantity" min="1" max="5">
+	</p>
+	
+	<p>
+		Color: <input type="color" id="favcolor" name="favcolor">
+	</p>
+	
+	<p>
+		DOB:<input type="date" id="birthday" name="birthday">
+	</p>
+	
+	<p>
+		Choose Time:<input type="time" name="appt">
+	</p>
+	
+	<p>
+		Choose a file: <input type="file" name="myfile" multiple>
+	</p>
+	
+	<p>
+		Date time:<input type="datetime-local" name="birthdaytime">
+	</p>
+	
+	<p>
+	<input type = "submit" value = "Submit">
+	<input type = "reset" value = "Clear">
+	</p>
+	
+	</form>
+	</body> 
+
+ </html>
